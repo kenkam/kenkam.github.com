@@ -13,7 +13,7 @@ Turtle Graphics Extension
 
 The extension is a simple GUI program written in GTK+. To make the extension:
 
-.. code-block: bash
+.. code-block:: bash
 
     $ make extension
     

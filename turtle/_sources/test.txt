@@ -40,7 +40,7 @@ There are 4 test executables. ``test_parser.c`` and ``test_interpreter.c`` are t
 
 ``test_FOO_malloc.c`` are used for simulating and testing when ``malloc()`` fails. This works because there is an ``intercept.h`` file that is essentially a macro that replaces ``malloc()`` with ``my_malloc()``, which lives in ``overrides.c``. This is switched on at compile time using the ``-D`` flag in ``gcc``. Since ``my_malloc()`` is a custom function, it can be made to fail whenever the tests require it, hence the ability to test various lines of code where ``malloc()`` appears.
 
-As well as testing for ``malloc``, the unittests contain tests for``parse_main()`` and ``interp_main()`` and runs various fixture files that live in the ``data`` folder. ``testdata1.txt`` tests the normal set of grammar as well as nested loops and reverse loops. ``testdata2.txt`` and ``testdata3.txt`` are copied from the assignment sheet. The generated postscript file has the same shape and appearance as the one on the assignment sheet as well. However, the unittests use these as regression tests, to make sure any addition of code has not broken anything.
+As well as testing for ``malloc``, the unittests contain tests for ``parse_main()`` and ``interp_main()`` and runs various fixture files that live in the ``data`` folder. ``testdata1.txt`` tests the normal set of grammar as well as nested loops and reverse loops. ``testdata2.txt`` and ``testdata3.txt`` are copied from the assignment sheet. The generated postscript file has the same shape and appearance as the one on the assignment sheet as well. However, the unittests use these as regression tests, to make sure any addition of code has not broken anything.
 
 Other files that live in the folder are expected output files and bad input files. The bad input files are by no means exhaustive, as these have already been carefully tested in the unittests themselves. However, they serve as a kind of black box test to ensure that everything works from the top-down.
 
@@ -68,7 +68,7 @@ Expected results
     
 .. [#f1] The grammar is correct for a polish that is a division by zero.
 
-Results (git revision 92cf9b7 / 1.0)
+Results (git commit 9861423 / tag 1.0)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 All tests pass.
@@ -93,7 +93,7 @@ Tests
     d. ``./interp data/testdata1.txt``
     e. ``./interp data/testdata1.txt out1.txt``
     f. ``./interp data/testb_inst.txt out1.txt``
-    g. ``./parse data/testb_polish.txt out1.txt``
+    g. ``./interp data/testb_polish.txt out1.txt``
     
 Expected results
     a. ``"Error: Requires two arguments"`` followed by usage
@@ -104,7 +104,7 @@ Expected results
     f. ``"Error: expected <INSTRUCTION> but got 'A 30' on line 2"`` followed by ``"Error: failed to parse and interpret data/testb_inst.txt"``
     g. ``"Error: division by zero in polish expression 'SET A := 4 5 5 - / ;' on line 2"`` followed by ``"Error: failed to parse and interpret data/testb_polish.txt"``
     
-Results (git revision 531fde2 / 1.0)
+Results (git commit 9861423 / tag 1.0)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 All tests pass.
