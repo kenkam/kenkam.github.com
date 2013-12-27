@@ -1,0 +1,53 @@
+body {
+	background-color: #605ca8;
+	color: #ddd !important;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li {
+	font-family: 'Raleway', sans-serif;
+}
+
+li,p {
+  color: #ccc;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 100;
+}
+
+small {
+  color: #bbb !important;
+}
+
+a {
+	color: #ddd !important;
+	text-decoration: underline;
+}
+
+ul {
+  list-style: outside !important;
+  padding: 0;
+}
+
+.item .meta {
+  font-size: 18px !important;
+}
+
+ul.tech-used {
+  list-style: none !important;
+}
+
+ul.tech-used li {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.2);
+  padding: 2px 5px;
+}
+
+#hero {
+	text-align: left;
+}
+
+span {
+  margin-right: 10px;
+  font-size: 90%;
+}
