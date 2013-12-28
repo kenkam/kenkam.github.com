@@ -15,12 +15,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 100;
 }
 
-small {
+small,a,#footer {
   color: #bbb !important;
 }
 
 a {
-  color: #ddd !important;
   text-decoration: underline;
 }
 
@@ -50,4 +49,27 @@ ul.tech-used li {
 span {
   margin-right: 10px;
   font-size: 90%;
+}
+
+#footer {
+  margin-top: 25px;
+  font-weight: 100;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#footer-wrapper {
+  background-color: rgba(0,0,0,.20); 
+}
+
+@media(max-width:767px) {
+  ul.tech-used li {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  ul.tech-used li:after { content: ", "; }
+  ul.tech-used li:last-child:before { content: "and "; }
+  ul.tech-used li:last-child:after { content: ""; }
 }
