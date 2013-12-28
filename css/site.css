@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 100;
 }
 
-small,a,#footer {
+small,a {
   color: #bbb !important;
 }
 
@@ -38,7 +38,7 @@ ul.tech-used {
 
 ul.tech-used li {
   display: inline-block;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,.2);
   padding: 2px 5px;
 }
 
@@ -56,10 +56,13 @@ span {
   font-weight: 100;
   padding-top: 15px;
   padding-bottom: 15px;
+  opacity: 0.6;
 }
 
+#footer a { color: #ddd !important; }
+
 #footer-wrapper {
-  background-color: rgba(0,0,0,.20); 
+  background-color: rgba(0,0,0,.2); 
 }
 
 @media(max-width:767px) {
