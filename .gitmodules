@@ -1,3 +1,6 @@
 [submodule "cv"]
 	path = cv
 	url = https://github.com/kenkam/cv.git
+[submodule "a"]
+	path = a
+	url = https://github.com/kenkam/cv.git
