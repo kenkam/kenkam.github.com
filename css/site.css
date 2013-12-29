@@ -11,7 +11,7 @@ li,p {
   color: #ccc;
 }
 
-h1,h2,h3,h4,h5,h6,.meta {
+h1,h2,h3,h4,h5,h6,.meta, .sub-heading {
   font-weight: 100;
 }
 
@@ -29,7 +29,20 @@ ul {
 }
 
 .item .meta {
+  font-size: 14px !important;
+}
+
+h2 {
+  margin-bottom: 0px !important;
+}
+
+h3 {
+  margin-bottom: 6px;
+}
+
+p.sub-heading {
   font-size: 18px !important;
+  margin-bottom: 4px;
 }
 
 ul.tech-used {
@@ -76,7 +89,7 @@ span {
   background-color: rgba(0,0,0,.2); 
 }
 
-@media(max-width:767px) {
+@media print, (max-width:767px) {
   ul.tech-used li {
     padding: 0;
     background-color: transparent;
@@ -85,6 +98,7 @@ span {
   ul.tech-used li:after { content: ", "; }
   ul.tech-used li:last-child:before { content: "and "; }
   ul.tech-used li:last-child:after { content: ""; }
+  ul.tech-used li:first-child:before { content: "" !important; }
 }
 
 @media print {
