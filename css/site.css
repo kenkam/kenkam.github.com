@@ -19,8 +19,14 @@ small,a {
   color: #bbb !important;
 }
 
-a {
-  text-decoration: underline;
+a { 
+  border-bottom: 1px solid #bbb;
+}
+
+a:hover, #footer a:hover {
+  text-decoration: none;
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 ul {
@@ -83,7 +89,7 @@ span {
   opacity: 0.8;
 }
 
-#footer a { color: #ddd !important; }
+#footer a { color: #ddd; }
 
 #footer-wrapper {
   background-color: rgba(0,0,0,.2); 
