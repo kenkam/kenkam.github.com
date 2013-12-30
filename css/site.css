@@ -104,6 +104,10 @@ span {
     margin-top: 0;
   }
   
+  ul { padding-left: 15px; }
+  ul.list-inline-custom { padding-left: 0; }
+  
+  /* for enumerating skills using commas and 'and' */
   ul.list-inline-custom li:after { content: ", "; }
   ul.list-inline-custom li:last-child:before { content: "and "; }
   ul.list-inline-custom li:last-child:after { content: ""; }
