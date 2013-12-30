@@ -39,8 +39,10 @@ ul {
 }
 
 h2 {
-  margin-bottom: 0px !important;
+  margin: 20px 0 0 0 !important;
 }
+
+#skills h2 { margin-bottom: 20px !important; }
 
 h3 {
   margin-bottom: 6px;
@@ -51,25 +53,25 @@ p.sub-heading {
   margin-bottom: 4px;
 }
 
-ul.tech-used {
+ul.list-inline-custom {
   list-style: none !important;
 }
 
-ul.tech-used:before,
-ul.tech-used:after {
+ul.list-inline-custom:before,
+ul.list-inline-custom:after {
   content:"";
   display:table;
 }
-ul.tech-used:after {
+ul.list-inline-custom:after {
   clear:both;
 }
 
-ul.tech-used li {
+ul.list-inline-custom li {
   display: inline-block;
   background-color: rgba(0,0,0,.2);
   padding: 2px 5px;
   float: left;
-  margin-right: 4px;
+  margin: 0 4px 4px 0;
 }
 
 #hero {
@@ -96,15 +98,16 @@ span {
 }
 
 @media print, (max-width:767px) {
-  ul.tech-used li {
+  ul.list-inline-custom li {
     padding: 0;
     background-color: transparent;
+    margin-top: 0;
   }
   
-  ul.tech-used li:after { content: ", "; }
-  ul.tech-used li:last-child:before { content: "and "; }
-  ul.tech-used li:last-child:after { content: ""; }
-  ul.tech-used li:first-child:before { content: "" !important; }
+  ul.list-inline-custom li:after { content: ", "; }
+  ul.list-inline-custom li:last-child:before { content: "and "; }
+  ul.list-inline-custom li:last-child:after { content: ""; }
+  ul.list-inline-custom li:first-child:before { content: "" !important; }
 }
 
 @media print {
