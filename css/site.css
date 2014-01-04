@@ -69,6 +69,7 @@ ul.list-inline-custom:after {
 ul.list-inline-custom li {
   display: inline-block;
   background-color: rgba(0,0,0,.2);
+  border-radius: 3px;
   padding: 2px 5px;
   float: left;
   margin: 0 4px 4px 0;
