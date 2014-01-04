@@ -1,5 +1,5 @@
 body {
-  background-color: #563D7C;
+  background-color: #253357;
   color: #ddd !important;
 }
 
@@ -69,6 +69,7 @@ ul.list-inline-custom:after {
 ul.list-inline-custom li {
   display: inline-block;
   background-color: rgba(0,0,0,.2);
+  border-radius: 3px;
   padding: 2px 5px;
   float: left;
   margin: 0 4px 4px 0;
@@ -81,6 +82,15 @@ ul.list-inline-custom li {
 span {
   margin-right: 10px;
   font-size: 90%;
+}
+
+.download {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.download a.btn {
+  color: #333 !important;
 }
 
 #footer {
@@ -112,9 +122,15 @@ span {
   ul.list-inline-custom li:last-child:before { content: "and "; }
   ul.list-inline-custom li:last-child:after { content: ""; }
   ul.list-inline-custom li:first-child:before { content: "" !important; }
+  
+  .download { 
+    margin-top: inherit; 
+    margin-bottom: 10px;
+  }
 }
 
 @media print {
   a { color: inherit !important; }
   #footer { display: none;}
+  .download { display: none; }
 }
