@@ -84,6 +84,15 @@ span {
   font-size: 90%;
 }
 
+.download {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.download a.btn {
+  color: #333 !important;
+}
+
 #footer {
   margin-top: 25px;
   font-weight: 100;
@@ -113,9 +122,15 @@ span {
   ul.list-inline-custom li:last-child:before { content: "and "; }
   ul.list-inline-custom li:last-child:after { content: ""; }
   ul.list-inline-custom li:first-child:before { content: "" !important; }
+  
+  .download { 
+    margin-top: inherit; 
+    margin-bottom: 10px;
+  }
 }
 
 @media print {
   a { color: inherit !important; }
   #footer { display: none;}
+  .download { display: none; }
 }
