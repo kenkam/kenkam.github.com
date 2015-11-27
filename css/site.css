@@ -8,12 +8,15 @@ h1,h2,h3,h4,h5,h6,p,a,li {
 }
 
 li,p {
-  color: #111;
   font-size: 18px;
 }
 
 h1,h2,h3,h4,h5,h6,.meta, .sub-heading {
   font-weight: 400;
+}
+
+h2 {
+  margin: 30px 0 0 0 !important;
 }
 
 small,a {
@@ -36,13 +39,13 @@ ul {
 }
 
 .item .meta {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 #skills h2 { margin-bottom: 20px !important; }
 
 h3.skills-title {
-  font-size: 18px;
+  font-size: 24px;
   margin: 3px 0 0 0;
 }
 
@@ -92,6 +95,11 @@ span {
 }
 
 @media print, (max-width:767px) {
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px !important; }
+  li, p { font-size: 14px; }
+  .item p.meta { font-size: 14px; }
+	
   ul.skill-item li {
     padding: 0;
     background-color: transparent;
@@ -108,8 +116,11 @@ span {
   ul.skill-item li:first-child:before { content: "" !important; }
   
   h3.skills-title {
-    font-weight: bold;
 	margin: 0 0 10px 0;
+  }
+  
+  #footer {
+	text-align: center
   }
   
   .download { 
@@ -119,7 +130,19 @@ span {
 }
 
 @media print {
+  body {
+	margin: 0 30px;
+  }
+	
+  h2 { font-size: 18px; }
+  h3 { font-size: 14px !important; }
+  li, p { font-size: 12px; }
+  .item p.meta { font-size: 12px; }
+  
   a { color: inherit !important; }
+  a[href]:after {
+    content: none !important;
+  }
   #footer { display: none;}
   .download { display: none; }
 }
