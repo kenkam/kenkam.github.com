@@ -95,7 +95,10 @@ span {
 }
 
 @media (max-width:767px) {
-  h1 { text-align: center }
+  h1 { 
+    text-align: center;
+	font-size: 30px;
+  }
 }
 
 @media print, (max-width:767px) {
