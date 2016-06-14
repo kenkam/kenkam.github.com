@@ -34,7 +34,7 @@
         </div>
         
         <p>
-          I am an enthusiastic developer who loves to write good code that solves business problems. Based in London, I enjoy working collaboratively in a team as well as working autonomously. My latest interest is writing enterprise software, in particular focusing on SOLID principles and improving my domain modelling skills.
+          I am an enthusiastic developer who strives to write maintainable code that solves business problems. Based in London, I enjoy working collaboratively in a team as well as working autonomously. My latest interest is writing software at enterprise scale, in particular focusing on SOLID principles and improving my domain modelling skills.
         </p>
       </div>
     
@@ -50,11 +50,13 @@
               <li>.NET 4.5</li>
               <li>ASP.NET MVC 5</li>
               <li>ASP.NET Web Api 2</li>
-              <li>Knockout</li>
+              <li>OAuth2</li>
+              <li>IdentityServer3</li>
               <li>TypeScript</li>
               <li>SOLID</li>
               <li>TDD</li>
               <li>TFS</li>
+              <li>Elasticsearch</li>
               <li>NUnit</li>
               <li>Moq</li>
               <li>Scrum</li>
@@ -69,8 +71,9 @@
           </div>
           <div class="col-sm-9 col-md-10">
             <ul class="skill-item">
+              <li>Knockout</li>
+              <li>AngularJS 1</li>
               <li>Couchbase</li>
-              <li>Elasticsearch</li>
               <li>RabbitMQ</li>
               <li>AngularJS</li>
               <li>Grunt</li>
@@ -84,6 +87,10 @@
               <li>jQuery</li>
               <li>Subversion</li>
               <li>Linux</li>
+              <li>Kibana</li>
+              <li>Azure</li>
+              <li>Octopus Deploy</li>
+              <li>Puppet</li>
             </ul>
           </div>
         </div>
@@ -92,50 +99,56 @@
       <div id="work">
         <h2>Work Experience</h2>
         <div class="item">
-          <h3>Senior Developer, Perfect Channel</h3>
+          <h3>Senior Software Developer, Perfect Channel</h3>
           <p class="meta">October 2014 &mdash; Present</p>
           <ul class="skill-item">
             <li>C# 5</li>
             <li>.NET 4.5</li>
             <li>ASP.NET MVC 5</li>
+            <li>ASP.NET Web Api 2</li>
+            <li>OAuth2</li>
+            <li>IdentityServer3</li>
+            <li>AngularJS 1</li>
             <li>Knockout</li>
             <li>TypeScript</li>
             <li>SOLID</li>
             <li>TDD</li>
+            <li>Couchbase</li>
+            <li>Elasticsearch</li>
+            <li>Kibana</li>
+            <li>RabbitMQ</li>
+            <li>Azure</li>
+            <li>Octopus Deploy</li>
+            <li>Puppet</li>
             <li>TFS</li>
             <li>NUnit</li>
             <li>Moq</li>
             <li>Scrum</li>
-            <li>Couchbase</li>
-            <li>Elasticsearch</li>
-            <li>RabbitMQ</li>
           </ul>
           <ul>
-            <li>Full-stack development of an eCommerce platform in ASP.NET MVC 5 using SOLID principles and TDD.</li>
-            <li>Experience with various technologies such as Couchbase, Elasticsearch and RabbitMQ.</li>
+            <li>
+              My current role is focused on the development of a multi-tenanted data analytics and visualization platform, implemented as a family of decoupled microservices. I have been responsible for a broad range of technologies, mainly split into the development and maintainance of the microservices and the DevOps to support the platform. The following are tasks that I have done in this role:
+              <ul>
+                <li>Developed plugins for our Kibana-based Dashboard that provided OAuth2, theming, and extra metric visualizations.</li>
+                <li>Developed and maintained an OAuth2 Elasticsearch proxy API that authorized users based on their tenancy.</li>
+                <li>Maintained the IdentityServer3 implementation, integrating with our in-house user accounts library.</li>
+                <li>Developed and maintained various frontend components implemented as single page applications using AngularJS.</li> 
+                <li>Implemented resource protection on our APIs using the open source OWIN middleware packages.</li>
+                <li>Implemented continuous delivery using Octopus Deploy and created custom TFS 2013 build templates to create NuGet packages of our services for Octopus.</li>
+                <li>Implemented an automated environment creation solution with a combination of Octopus Deploy, Azure Powershell scripts, and Puppet. The solution creates a resource group in Azure, the provisioning of the Puppet Master VM, followed by any number of service VMs provisioned as Puppet Agents.
+                <li>Developed a set of Puppet manifests for the platform, including a set of MCollective manifests to allow the Puppet Master to push updates to Agents and a set of RabbitMQ manifests.</li>
+                <li>Implemented a Vagrant file that bootstrapped developer VMs using Puppet manifests.</li>
+              </ul>
+            </li>
+            <li>My previous role involved being in cross-functional team, performing full-stack development of an eCommerce platform in ASP.NET MVC 5.</li>
+            <li>Provided regular code reviews to improve the quality of the deliverable as a team and also to learn and to teach others.</li>
             <li>Followed the Scrum methodology to deliver iterations. Actively participated in sprint planning and retrospectives to promote continuous improvement.</li>
-            <li>Proactive in documenting existing technical debt in the codebase.</li>
+            <li>Proactive in documenting existing technical debt as stories into our backlog to allow the development teams to tackle them in future sprints.</li> 
           </ul>
         </div>
+        <br />
         <div class="item">
-          <h3>C++ Developer, Rates E-Commerce, Credit Suisse</h3>
-          <p class="meta">March 2014 &mdash; October 2014</p>
-          <ul class="skill-item">
-            <li>C++</li>
-            <li>Google Test</li>
-            <li>Google Mock</li>
-            <li>Boost</li>
-            <li>TeamCity</li>            
-            <li>Unix</li>
-          </ul>
-          <ul>
-            <li>Responsible for developing and delivering a C++ market data feed for the MTS Cash Market Facility.</li>
-            <li>Developed code using the test driven development method with Google Test and Google Mock to ensure testability and improve code quality. Use of smart pointers from Boost where appropriate to safely manage resources.</li>
-            <li>Continuous integration using TeamCity providing nightly builds and tests.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>GUI Developer, Rates Electronic Market Making, Credit Suisse</h3>
+          <h3>Application Developer, Rates E-Commerce, Credit Suisse</h3>
           <p class="meta">July 2012 &mdash; March 2014</p>
           <ul class="skill-item">
             <li>WPF</li>
@@ -145,11 +158,17 @@
             <li>Rhino Mocks</li>
             <li>TeamCity</li>
             <li>Unix</li>
+            <li>C++</li>
+            <li>Google Test</li>
+            <li>Google Mock</li>
+            <li>Boost</li>
           </ul>
           <ul>
             <li>Main WPF GUI developer responsible for implementing new features using MVVM to promote code maintainability. Added unittests to enable refactoring the codebase.</li>
             <li>Implemented continuous integration using TeamCity and created a QA test plan to maintain application quality between releases.</li>
             <li>Implemented an automated release process using TeamCity and shell scripts to allow one-click deployments.</li>
+            <li>Responsible for developing and delivering a C++ market data feed for the MTS Cash Market Facility.</li>
+            <li>Developed code using the test driven development method with Google Test and Google Mock to ensure testability and improve code quality. Use of smart pointers from Boost where appropriate to safely manage resources.</li>
           </ul>
         </div>
         <div class="item">
@@ -165,11 +184,15 @@
           </ul>
           <ul>
             <li>Developed an ASP.NET based CRUD application to administer user access to a trade blotter using HTML5 and MSSQL stored procedures.</li>
+            <li>Offered support and troubleshooting for the trade blotter application, talking to the users of the system in front and middle office.</li>
           </ul>
         </div>
         <div class="item">
           <h3>Intern, ICT Develop, Airbus</h3>
           <p class="meta">July 2008 &mdash; July 2009</p>
+          <ul>
+            <li>Development of a framework that enabled rapid development of CAD tools in Python.</li>
+          </ul>
         </div>
       </div>
 
@@ -208,7 +231,7 @@
             <li>jQuery</li>
           </ul>
           <ul>
-            <li>Designed and developed an AngularJS-driven UI for the challenge winning incident management dashboard.</li>
+            <li>Designed and developed an AngularJS single page application for the challenge winning incident management dashboard.</li>
             <li>Collaborated on the product presentation and created the overall look-and-feel for the presentation.</li>
           </ul>
         </div>

@@ -39,6 +39,10 @@ ul {
   padding: 0;
 }
 
+ul>li>ul {
+  padding-left: 20px;
+}
+
 .item .meta {
   font-size: 18px;
 }
@@ -135,11 +139,11 @@ span {
 
 @media print {
   body {
-	margin: 0 30px;
+	  margin: 0 30px;
   }
 	
   h2 { font-size: 18px; }
-  h3 { font-size: 14px !important; }
+  h3 { font-size: 14px !important; margin-bottom: 5px !important; }
   li, p { font-size: 12px; }
   .item p.meta { font-size: 12px; }
   
