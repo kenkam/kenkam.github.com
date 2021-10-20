@@ -28,13 +28,10 @@
               <a href="mailto:kenkam@gmail.com">kenkam@gmail.com</a>
             </p>
           </div>
-          <div class="col-sm-3 download">
-            <a href="./kenneth-kam-cv.pdf" class="btn btn-block btn-default"><span class="glyphicon glyphicon-download-alt"></span>Download as PDF</a>
-          </div>
         </div>
         
         <p>
-          I am an enthusiastic developer who strives to write maintainable code that solves business problems. Based in London, I enjoy working collaboratively in a team as well as working autonomously. My latest interest is writing software at enterprise scale, in particular focusing on SOLID principles and improving my domain modelling skills.
+          I am a full-stack developer who likes to write maintainable code that solves business problems. Based in London, I enjoy working collaboratively in a team as well as working autonomously.
         </p>
       </div>
     
@@ -46,50 +43,10 @@
           </div>        
           <div class="col-sm-9 col-md-10">
             <ul class="skill-item">
-              <li>C# 5</li>
-              <li>.NET 4.5</li>
-              <li>ASP.NET MVC 5</li>
-              <li>ASP.NET Web Api 2</li>
-              <li>OAuth2</li>
-              <li>IdentityServer3</li>
-              <li>TypeScript</li>
-              <li>SOLID</li>
-              <li>TDD</li>
-              <li>TFS</li>
-              <li>Elasticsearch</li>
-              <li>NUnit</li>
-              <li>Moq</li>
-              <li>Scrum</li>
-              <li>NuGet</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 col-md-2">
-            <h3 class="skills-title">Experience</h3>
-          </div>
-          <div class="col-sm-9 col-md-10">
-            <ul class="skill-item">
-              <li>Knockout</li>
-              <li>AngularJS 1</li>
-              <li>Couchbase</li>
-              <li>RabbitMQ</li>
-              <li>Grunt</li>
-              <li>Bower</li>
-              <li>Python</li>
-              <li>Javascript</li>
-              <li>SQL</li>
-              <li>Django</li>
-              <li>Rhino Mocks</li>
-              <li>TeamCity</li>
-              <li>jQuery</li>
-              <li>Subversion</li>
-              <li>Linux</li>
-              <li>Kibana</li>
-              <li>Azure</li>
-              <li>Octopus Deploy</li>
-              <li>Puppet</li>
+              <li>C#</li>
+              <li>ASP.NET Core</li>
+              <li>Angular</li>
+              <li>SQL Server</li>
             </ul>
           </div>
         </div>
@@ -98,45 +55,32 @@
       <div id="work">
         <h2>Work Experience</h2>
         <div class="item">
-          <h3>Senior Software Developer, Perfect Channel</h3>
-          <p class="meta">October 2014 &mdash; Present</p>
-          <ul class="skill-item">
-            <li>C# 5</li>
-            <li>.NET 4.5</li>
-            <li>ASP.NET MVC 5</li>
-            <li>ASP.NET Web Api 2</li>
-            <li>OAuth2</li>
-            <li>IdentityServer3</li>
-            <li>AngularJS 1</li>
-            <li>Knockout</li>
-            <li>TypeScript</li>
-            <li>SOLID</li>
-            <li>TDD</li>
-            <li>Couchbase</li>
-            <li>Elasticsearch</li>
-            <li>Kibana</li>
-            <li>RabbitMQ</li>
-            <li>Azure</li>
-            <li>Octopus Deploy</li>
-            <li>Puppet</li>
-            <li>TFS</li>
-            <li>NUnit</li>
-            <li>Moq</li>
-            <li>Scrum</li>
-          </ul>
+          <h3>Senior Software Developer, G-Research</h3>
+          <p class="meta">August 2016 &mdash; Current</p>
           <ul>
             <li>
-              My current role is focused on the development of a multi-tenanted data analytics and visualization platform, implemented as a family of decoupled microservices. I have been responsible for a broad range of technologies, mainly split into the development and maintainance of the microservices and the DevOps to support the platform. The following are tasks that I have done in this role:
+              Full-stack developer on the trading monitoring and tooling team responsible for developing apps for real-time monitoring, alerting, and operational workflows. The following are tasks that I have done in this role:
+              <ul>
+                <li>Migrated a complex configuration tool to a simple, API-based design that is easier to maintain and add new features to.</li>
+                <li>Implemented a workflow platform to orchestrate business processes.</li>
+                <li>Implemented SLIs using Prometheus to measure the reliability and performance of our apps.</li>
+                <li>Maintained a variety of apps, such as a real-time monitoring frontend, trading platform configuration tooling, service orchestration, release management, and more.</li>
+                <li>Organised squad health checks and 1-1 coffees within the team with the aim of understanding and improving the team morale.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Senior Software Developer, Perfect Channel</h3>
+          <p class="meta">October 2014 &mdash; August 2016</p>
+          <ul>
+            <li>
+              Development of a multi-tenanted data analytics and visualization platform, implemented as a family of decoupled microservices. I have been responsible for a broad range of technologies, mainly split into the development and maintainance of the microservices and the DevOps to support the platform. The following are tasks that I have done in this role:
               <ul>
                 <li>Developed plugins for our Kibana-based Dashboard that provides OAuth2, theming, and extra metric visualizations.</li>
                 <li>Developed and maintained an OAuth2 Elasticsearch proxy API that authorized users based on their tenancy.</li>
                 <li>Maintained the IdentityServer3 implementation as our OpenID Connect server, integrating with our in-house user accounts library.</li>
-                <li>Developed and maintained various frontend components implemented as single page applications using AngularJS.</li> 
-                <li>Implemented resource protection for our APIs using open source OWIN middleware packages.</li>
-                <li>Implemented continuous delivery using Octopus Deploy and created custom TFS 2013 build templates to create NuGet packages of our services for Octopus.</li>
                 <li>Implemented a workflow to provision an environment in Azure with a combination of Octopus Deploy, Azure Powershell scripts, and Puppet. The workflow begins by creating a resource group and skeleton services in Azure, the provisioning of the Puppet Master VM, followed by any number of service VMs provisioned as Puppet Agents.</li>
-                <li>Developed a set of Puppet manifests for the platform, including a set of MCollective manifests to allow the Puppet Master to push updates to Agents and a set of RabbitMQ manifests.</li>
-                <li>Created a Vagrant file that bootstrapped developer VMs using the same Puppet manifests as described above.</li>
               </ul>
             </li>
             <li>My previous role involved being in a cross-functional team, performing full-stack development for a marketplace trading platform.</li>
@@ -148,19 +92,6 @@
         <div class="item">
           <h3>Application Developer, Rates E-Commerce, Credit Suisse</h3>
           <p class="meta">July 2012 &mdash; October 2014</p>
-          <ul class="skill-item">
-            <li>WPF</li>
-            <li>C# .NET 4</li>
-            <li>Oracle/Sybase SQL</li>
-            <li>NUnit</li>
-            <li>Rhino Mocks</li>
-            <li>TeamCity</li>
-            <li>Unix</li>
-            <li>C++</li>
-            <li>Google Test</li>
-            <li>Google Mock</li>
-            <li>Boost</li>
-          </ul>
           <ul>
             <li>Main WPF GUI developer responsible for implementing new features using MVVM to promote code maintainability. Added unittests to enable refactoring the codebase.</li>
             <li>Implemented continuous integration using TeamCity and created a QA test plan to maintain application quality between releases.</li>
@@ -172,14 +103,6 @@
         <div class="item">
           <h3>Application Developer, Trade Management, Credit Suisse</h3>
           <p class="meta">July 2011 &mdash; July 2012</p>
-          <ul class="skill-item">
-            <li>ASP.NET MVC 3</li>
-            <li>MSSQL</li>
-            <li>C# .NET 4</li>
-            <li>NUnit</li>
-            <li>Rhino Mocks</li>
-            <li>TeamCity</li>      
-          </ul>
           <ul>
             <li>Developed an ASP.NET based CRUD application to administer user access to a trade blotter using HTML5 and MSSQL stored procedures.</li>
             <li>Offered support and troubleshooting for the trade blotter application, talking to the users of the system in front and middle office.</li>
@@ -209,30 +132,6 @@
             <li>One-year industrial placement at Airbus, UK. See above.</li>
           </ul>
         </div>
-        <div class="item">
-          <h3>The King&lsquo;s School, Canterbury</h3>
-          <p class="meta">1999 &mdash; 2004</p>
-          <ul>
-            <li>A in Mathematics, Further Mathematics, Physics, and Design and Technology</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="achievements">
-        <h2>Achievements</h2>
-        <div class="item">
-          <h3>Technical Analyst Challenge Winner, Credit Suisse</h3>
-          <p class="meta">January 2013</p>
-          <ul class="skill-item">
-            <li>AngularJS 1</li>
-            <li>HTML5</li>
-            <li>jQuery</li>
-          </ul>
-          <ul>
-            <li>Designed and developed an AngularJS single page application for the challenge winning incident management dashboard.</li>
-            <li>Collaborated on the product presentation and created the overall look-and-feel for the presentation.</li>
-          </ul>
-        </div>
       </div>
     </div>  
     </div>
@@ -241,7 +140,7 @@
     <div class="container" id="footer">
     <div class="row">
       <div class="col-lg-offset-1 col-md-8">
-        &copy; Kenneth Kam 2016
+        &copy; Kenneth Kam 2021
       </div>
     </div>
     </div>
