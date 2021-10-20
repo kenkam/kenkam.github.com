@@ -47,34 +47,6 @@ ul>li>ul {
   font-size: 18px;
 }
 
-#skills h2 { margin-bottom: 20px !important; }
-
-h3.skills-title {
-  font-size: 24px;
-  margin: 3px 0 0 0;
-}
-
-ul.skill-item {
-  list-style: none !important;
-}
-
-ul.skill-item:before,
-ul.skill-item:after {
-  content:"";
-  display:table;
-}
-ul.skill-item:after {
-  clear:both;
-}
-
-ul.skill-item li {
-  display: inline-block;
-  background-color: rgba(0,0,0,.15);
-  padding: 3px 8px;
-  float: left;
-  margin: 0 4px 4px 0;
-}
-
 #hero {
   text-align: left;
 }
@@ -107,26 +79,8 @@ span {
   li, p, #footer, .item p.meta { font-size: 14px; }
 
   #name { text-align: center; }
-	
-  ul.skill-item li {
-    padding: 0;
-    background-color: transparent;
-    margin: 0;
-  }
   
   ul { padding-left: 15px; }
-  ul.skill-item { padding-left: 0; }
-  
-  /* for enumerating skills using commas and 'and' */
-  ul.skill-item li:after { content: ",\00a0"; }
-  ul.skill-item li:last-child:before { content: "and "; }
-  ul.skill-item li:last-child:after { content: ""; }
-  ul.skill-item li:first-child:before { content: "" !important; }
-  
-  h3.skills-title {
-	margin: 0 0 10px 0;
-  }
-  
   #footer {
 	text-align: center
   }
