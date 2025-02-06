@@ -42,7 +42,7 @@ a:hover, #footer a:hover {
 
 ul {
   list-style: outside !important;
-  padding: 0 1em;
+  padding: 0;
   margin-bottom: 1em;
 }
 
