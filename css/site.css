@@ -1,9 +1,12 @@
 body {
-  background-color: #fff;
-  color: #333 !important;
+  background-color: #222;
   font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   line-height: 1.5;
   margin-top: 1em;
+}
+
+body,a,p {
+  color: #ddd !important;
 }
 
 h1,h2,h3,h4,h5,h6,p,a,li {
@@ -26,18 +29,13 @@ h2 {
   margin: 30px 0 0 0 !important;
 }
 
-small,a {
-  color: #333 !important;
-}
-
 a { 
   border-bottom: 1px solid #999;
 }
 
 a:hover, #footer a:hover {
   text-decoration: none;
-  color: #000 !important;
-  border-color: #666;
+  color: #fff !important;
 }
 
 ul {
