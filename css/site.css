@@ -3,6 +3,7 @@ body {
   color: #333 !important;
   font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   line-height: 1.5;
+  margin-top: 1em;
 }
 
 h1,h2,h3,h4,h5,h6,p,a,li {
@@ -10,7 +11,11 @@ h1,h2,h3,h4,h5,h6,p,a,li {
 }
 
 li,p {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 h1,h2,h3,h4,h5,h6,.meta, .sub-heading {
@@ -37,24 +42,21 @@ a:hover, #footer a:hover {
 
 ul {
   list-style: outside !important;
-  padding: 0;
+  padding: 0 1em;
+  margin-bottom: 1em;
 }
 
-ul>li>ul {
-  padding-left: 20px;
+li span {
+  position: relative;
+  font-size: inherit;
 }
 
-.item .meta {
-  font-size: 18px;
+.item {
+  margin-bottom: 3em;
 }
 
 #hero {
   text-align: left;
-}
-
-span {
-  margin-right: 10px;
-  font-size: 90%;
 }
 
 .download {
@@ -67,10 +69,6 @@ span {
 }
 
 #footer {
-  margin-top: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 18px;
 }
 
 @media print, (max-width:767px) {
