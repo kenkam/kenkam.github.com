@@ -57,16 +57,10 @@ li span {
   text-align: left;
 }
 
-.download {
-  margin-top: 20px;
-  text-align: right;
-}
-
-.download a.btn {
-  color: #333 !important;
-}
-
-#footer {
+div#skills span {
+  display: inline-block;
+  text-decoration: underline;
+  color: #fff;
 }
 
 @media print, (max-width:767px) {
@@ -90,7 +84,7 @@ li span {
 
 @media print {
   body {
-	  margin: 0 30px;
+	  margin: -20px 30px;
   }
 	
   h2 { font-size: 18px; }
