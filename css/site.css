@@ -63,7 +63,7 @@ div#skills span {
   color: #fff;
 }
 
-@media print, (max-width:767px) {
+@media (max-width:767px) {
   h1 { font-size: 30px; }
   h2 { font-size: 24px; }
   h3 { font-size: 18px !important; }
@@ -91,7 +91,7 @@ div#skills span {
   h3 { font-size: 14px !important; margin-bottom: 5px !important; }
   li, p { font-size: 12px; }
   .item p.meta { font-size: 12px; }
-  
+
   a { color: inherit !important; }
   a[href]:after {
     content: none !important;
